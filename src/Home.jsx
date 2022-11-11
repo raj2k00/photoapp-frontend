@@ -61,7 +61,7 @@ const Home = () => {
       .then(async (res) => {
         console.log(res);
         setLoading(false);
-        toast("uploaded successfully!", {
+        toast("Deleted successfully!", {
           position: "top-center",
           autoClose: 3000,
           hideProgressBar: false,

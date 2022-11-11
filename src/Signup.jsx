@@ -27,6 +27,7 @@ const Signup = () => {
         navigate("/signup");
       }
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const SignUpSchema = Yup.object().shape({

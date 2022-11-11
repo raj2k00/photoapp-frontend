@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import "./Upload.scss";
 import ImageUploading from "react-images-uploading";

@@ -11,6 +11,7 @@ import { APP_URL } from "./constant";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
+  // eslint-disable-next-line no-unused-vars
   const [cookies, setCookie] = useCookies(["jwt"]);
   const [selectedImages, setSelectedImages] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -20,6 +21,7 @@ const Home = () => {
 
   useEffect(() => {
     if (!cookies.jwt || Object.keys(user).length === 0) navigate("/login");
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const openUploadPopup = () => {

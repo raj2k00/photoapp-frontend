@@ -216,7 +216,6 @@ const Signup = () => {
                   <label className="form-checkbox__label" htmlFor="checkbox">
                     By signing up, you agree to our
                     <span>
-                      {" "}
                       User Agreement, Terms of Service, & Privacy Policy
                     </span>
                   </label>

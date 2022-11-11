@@ -75,6 +75,7 @@ h1 {
   margin-top: 2rem;
   display: flex;
   flex-wrap: wrap;
+  font-family: "Manrope";
 
   &-group {
     display: flex;
@@ -86,7 +87,6 @@ h1 {
     padding-right: 1rem;
 
     &__label {
-      font-family: "Manrope";
       font-style: normal;
       font-weight: 500;
       font-size: 14px;
@@ -96,7 +96,6 @@ h1 {
     }
 
     &__input {
-      font-family: "Manrope";
       padding: 10px 16px;
       height: 1.5rem;
       width: 15rem;
@@ -112,9 +111,14 @@ h1 {
       }
     }
   }
+
+  &-error {
+    font-size: 12px;
+    color: red;
+  }
   &-checkbox {
     padding: 1rem 0;
-    font-family: "Manrope";
+
     font-size: 14px;
 
     &__label span {
@@ -125,7 +129,6 @@ h1 {
     }
   }
   &-button {
-    font-family: "Manrope";
     margin: 1rem 0;
     color: $defaultWhite;
     cursor: pointer;

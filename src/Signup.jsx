@@ -26,8 +26,14 @@ const Signup = () => {
   }, []);
 
   const SignUpSchema = Yup.object().shape({
-    fname: Yup.string().required("First Name is required").min(4).max(20),
-    lname: Yup.string().required("Last Name is required").min(1).max(20),
+    fname: Yup.string()
+      .required("First Name is required")
+      .min(4, "First Name must have atleast 4 letters")
+      .max(20, "Max 20 letters"),
+    lname: Yup.string()
+      .required("Last Name is required")
+      .min(1, "Last Name must have atleast 1 character")
+      .max(20, "Max 20 characters"),
     email: Yup.string()
       .email("Invalid email address format")
       .required("Email is required"),
@@ -132,7 +138,9 @@ const Signup = () => {
                       placeholder="Enter your First Name"
                       autoComplete="off"
                     />
-                    <ErrorMessage name="fname" />
+                    <div className="form-error">
+                      <ErrorMessage name="fname" />
+                    </div>
                   </div>
                   <div className="form-group">
                     <label htmlFor="lname" className="form-group__label">
@@ -145,7 +153,9 @@ const Signup = () => {
                       placeholder="Enter your Last Name"
                       autoComplete="off"
                     />
-                    <ErrorMessage name="lname" />
+                    <div className="form-error">
+                      <ErrorMessage name="lname" />
+                    </div>
                   </div>
                   <div className="form-group">
                     <label htmlFor="email" className="form-group__label">
@@ -158,7 +168,9 @@ const Signup = () => {
                       placeholder="Enter your email"
                       autoComplete="off"
                     />
-                    <ErrorMessage name="email" />
+                    <div className="form-error">
+                      <ErrorMessage name="email" />
+                    </div>
                   </div>
                   <div className="form-group">
                     <label htmlFor="phone" className="form-group__label">
@@ -173,7 +185,9 @@ const Signup = () => {
                       placeholder="12345-67890"
                       autoComplete="off"
                     />
-                    <ErrorMessage name="phoneNumber" />
+                    <div className="form-error">
+                      <ErrorMessage name="phoneNumber" />
+                    </div>
                   </div>
                   <div className="form-group">
                     <label htmlFor="password" className="form-group__label">
@@ -186,7 +200,9 @@ const Signup = () => {
                       placeholder="Enter your name"
                       autoComplete="off"
                     />
-                    <ErrorMessage name="password" />
+                    <div className="form-error">
+                      <ErrorMessage name="password" />
+                    </div>
                   </div>
                 </div>
                 <div className="form-checkbox">

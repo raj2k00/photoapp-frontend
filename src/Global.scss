@@ -1,0 +1,328 @@
+$primaryBlue: #444278;
+$defaultWhite: #ffffff;
+$secondaryBlue: #6360ab;
+$primaryGrey: #dcdce4;
+$lightGreen: #eaffd9;
+$darkBlue: #433bff;
+
+h1 {
+  color: $primaryBlue;
+}
+
+.signup {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+
+  &-left {
+    width: 40%;
+    background-color: $primaryBlue;
+  }
+  &-right {
+    width: 60%;
+
+    &--content {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+}
+
+.welcome-text {
+  color: $defaultWhite;
+  font-family: "Manrope";
+  margin: 0 auto;
+  margin-top: 9rem;
+  width: 70%;
+
+  &--heading {
+    display: block;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  &--para {
+    font-size: 1rem;
+    font-weight: 500;
+    width: 85%;
+    opacity: 80%;
+  }
+}
+
+.heading__container {
+  font-family: "Inter";
+  margin: 0 auto;
+  margin-top: 7rem;
+
+  &--heading {
+    display: block;
+    font-size: 2.25rem;
+    font-weight: 500;
+  }
+  &--para {
+    display: block;
+    font-size: 1rem;
+    font-weight: 300;
+    opacity: 50%;
+    padding-top: 0.5rem;
+  }
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+.form {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+
+  &-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    line-height: 20px;
+    padding: 1rem 0;
+    padding-right: 1rem;
+
+    &__label {
+      font-family: "Manrope";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      padding-bottom: 3px;
+      letter-spacing: 1.2px;
+      //   color: $secondaryBlue;
+    }
+
+    &__input {
+      font-family: "Manrope";
+      padding: 10px 16px;
+      height: 1.5rem;
+      width: 15rem;
+      font-weight: 500;
+      font-size: 1rem;
+      background: #ffffff;
+      border: 1.5px solid $primaryGrey;
+      border-radius: 4px;
+
+      &:focus {
+        border: 2px solid $secondaryBlue;
+        outline: none;
+      }
+    }
+  }
+  &-checkbox {
+    padding: 1rem 0;
+    font-family: "Manrope";
+    font-size: 14px;
+
+    &__label span {
+      color: $secondaryBlue;
+    }
+    &__input {
+      margin-right: 12px;
+    }
+  }
+  &-button {
+    font-family: "Manrope";
+    margin: 1rem 0;
+    color: $defaultWhite;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    width: 18rem;
+    height: 3rem;
+    background: $secondaryBlue;
+    border-radius: 4px;
+  }
+}
+
+.login-text {
+  font-family: "Manrope";
+  font-size: 14px;
+
+  &__link {
+    color: $secondaryBlue;
+    text-decoration: none;
+    padding-left: 3px;
+    font-weight: 500;
+  }
+}
+.eye {
+  position: relative;
+  &-image {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+  }
+}
+
+.btn-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 3rem;
+
+  &-header {
+    display: flex;
+    font-family: "Manrope";
+    justify-content: space-between;
+    &__title {
+      &--heading {
+        color: #000;
+        font-size: 2rem;
+        margin: 0;
+        margin-bottom: 1rem;
+      }
+      &--para {
+        font-size: 14px;
+        margin: 0;
+      }
+    }
+
+    &__btn {
+      position: relative;
+      font-family: "Manrope";
+
+      &--btn {
+        margin: 1rem 0;
+        color: $defaultWhite;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        font-size: 1rem;
+        width: 15rem;
+        height: 3rem;
+        background: $secondaryBlue;
+        border-radius: 4px;
+        margin-right: 1rem;
+      }
+      &--delete_btn {
+        margin: 1rem 0;
+        color: $secondaryBlue;
+        cursor: pointer;
+        font-weight: 400;
+        outline: none;
+        border: 2px solid $secondaryBlue;
+        font-size: 1rem;
+        width: 13rem;
+        height: 3rem;
+        background: $defaultWhite;
+        border-radius: 4px;
+      }
+    }
+  }
+  &-content {
+    display: flex;
+    width: 100%;
+    &__bgImage {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      height: calc(100vh - 10rem);
+    }
+
+    &__image {
+      display: grid;
+      gap: 2rem 2rem;
+      grid-template-columns: repeat(auto-fill, 18.5rem);
+      grid-template-rows: 15rem;
+      margin-top: 3rem;
+      width: 100%;
+      &-item {
+        box-shadow: 0px 1px 4px rgba(26, 26, 67, 0.1);
+        overflow: hidden;
+        border-radius: 4px;
+        position: relative;
+
+        &--description {
+          padding: 0 8px;
+          margin: 1rem 0;
+          font-family: "Manrope";
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+.image-selector {
+  width: 24px;
+  height: 24px;
+  border: 1px solid $darkBlue;
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  border-radius: 5px;
+  &-selected {
+    background: #413bffbc;
+    background-image: url("../public/Vector.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.filename-style {
+  font-size: 14px;
+}
+.filetype-style {
+  display: flex;
+  font-size: 12px;
+  padding: 5px 10px;
+  background-color: $lightGreen;
+  border-radius: 3px;
+}
+
+.circle-icon {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 35%;
+  left: 5%;
+}
+.arrow-circle-icon {
+  position: absolute;
+  top: 38%;
+  left: 20%;
+}
+
+.error {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Manrope";
+  text-align: center;
+
+  &-heading {
+    font-size: 18rem;
+
+    & img {
+      width: 14rem;
+      height: 16rem;
+    }
+  }
+
+  &-description {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: -1rem;
+  }
+}
+
+.btn-container {
+  display: flex;
+}

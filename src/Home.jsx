@@ -114,16 +114,25 @@ const Home = () => {
             </button>
             <img className="circle-icon" src="./circle.png" alt="circle" />
           </div>
-          <div className="home-header__btn">
-            <button
-              className="home-header__btn--delete_btn"
-              onClick={handleDelete}
-              disabled={loading}
-            >
-              {loading ? "Deleting..." : "Delete Selected"}
-            </button>
-            <img className="circle-icon" src="./delete_icon.png" alt="circle" />
-          </div>
+
+          {selectedImages.length > 0 ? (
+            <div className="home-header__btn">
+              <button
+                className="home-header__btn--delete_btn"
+                onClick={handleDelete}
+                disabled={loading}
+              >
+                {loading ? "Deleting..." : "Delete Selected"}
+              </button>
+              <img
+                className="circle-icon"
+                src="./delete_icon.png"
+                alt="circle"
+              />
+            </div>
+          ) : (
+            <></>
+          )}
         </div>
       </div>
 

@@ -65,7 +65,7 @@ const Upload = ({ close }) => {
       })
       .catch((e) => {
         setIsUploading(false);
-        toast("error occurred! try again", {
+        toast(e.response.data.message, {
           position: "top-center",
           autoClose: 3000,
           hideProgressBar: false,

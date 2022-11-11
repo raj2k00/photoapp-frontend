@@ -19,13 +19,8 @@ const Signup = () => {
 
   useEffect(() => {
     if (cookies) {
-      if (cookies.jwt && Object.keys(user).length === 0) {
-        navigate("/home");
-      } else if (cookies.jwt || Object.keys(user).length === 0) {
-        navigate("/login");
-      } else {
-        navigate("/signup");
-      }
+      if (cookies.jwt && Object.keys(user).length === 0) navigate("/home");
+      navigate("/signup");
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);

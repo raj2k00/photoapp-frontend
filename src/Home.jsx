@@ -61,6 +61,7 @@ const Home = () => {
       .then(async (res) => {
         console.log(res);
         setLoading(false);
+        setSelectedImages([]);
         toast("Deleted successfully!", {
           position: "top-center",
           autoClose: 3000,

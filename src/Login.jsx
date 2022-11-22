@@ -64,7 +64,7 @@ const Login = () => {
     <div className="signup">
       <div className="signup-left">
         <div className="welcome-text">
-          <span className="welcome-text--heading">Welcome to Rsquare</span>
+          <span className="welcome-text--heading">Welcome to PhotoApp</span>
           <span className="welcome-text--para">
             Lets get you all set up so start with your account and begin setting
             up your profile.
